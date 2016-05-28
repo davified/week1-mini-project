@@ -1,0 +1,153 @@
+@import url('/Users/davified/Desktop/Coding/CSS libraries/_reset.css');
+
+* { 
+  font: 200 20px/1.5 "Helvetica Neue", Helvetica;
+  text-align: justify;
+  color: white;
+}
+
+box {
+  background: #E5BC00;
+}
+
+body {
+  background: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1 {
+  text-align: right;
+  font-size: 1.8em;
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover { 
+  color: black;
+  transition: all 0.5s;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.flex-right {
+    justify-content: space-between;
+  }
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+
+.nav-btn {
+  list-style: none;
+  display: inline;
+  flex: 1 0 300px;
+  background: #7F6800;
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+
+}
+
+.title {
+  text-align: left;
+  color: lightgrey;
+  
+}
+
+h1 {
+  text-align: right;
+  size: 2em;
+  font-weight: bold;
+}
+
+
+.flex-1 {
+  flex: 1;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.flex-3 {
+  flex: 3;
+  border: 5px solid black;
+  padding: 20px
+}
+
+#image {
+  padding:0;
+  margin: 5px;
+  margin-bottom: -8px;
+  border: 0;
+}
+
+blockquote {
+  border-left: 5px solid lightgrey;
+  padding-left: 10px;
+}
+
+/*  */
+@media (max-width: 700px) {
+  .container, .nav-bar {
+    flex-direction: column
+  }
+  .box {
+    width: 700px;
+  }
+}
+
+
+/*experimenting with parallax display*/
+/*.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-3px) scale(4);
+}
+
+.parallax__layer--deep {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}*/
