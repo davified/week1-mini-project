@@ -1,4 +1,4 @@
-@import url('/Users/davified/Desktop/Coding/CSS libraries/_reset.css');
+@import url('./_reset.css');
 
 * { 
   font: 200 20px/1.5 "Helvetica Neue", Helvetica;
@@ -30,11 +30,18 @@ h2{
 a {
   text-decoration: none;
   color:white;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  height: 30px;
+  border: 5px solid black;
 }
 
 a:hover { 
-  color: black;
+/*  color: gold;
+*/  background: #402E03;
   transition: all 0.5s;
+
 }
 
 strong {
@@ -49,10 +56,6 @@ strong {
   flex-wrap: wrap;
 }
 
-.flex-right {
-    justify-content: space-between;
-  }
-
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
@@ -63,20 +66,18 @@ strong {
 
 .nav-btn {
   list-style: none;
+  flex: 1;
   display: inline;
-  flex: 1 0 300px;
+  flex: 1 0 350px;
   background: #7F6800;
   text-align: center;
   color: white;
   font-family: "Helvetica Neue";
   font-weight: bold;
-
 }
 
 .title {
   text-align: left;
-  color: lightgrey;
-  
 }
 
 h1 {
@@ -112,7 +113,7 @@ blockquote {
 
 /*  */
 @media (max-width: 700px) {
-  .container, .nav-bar {
+  .container {
     flex-direction: column
   }
   .box {
