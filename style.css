@@ -62,6 +62,7 @@ strong {
   justify-content: center;
   margin: 0 auto;
   font-size: 1.8em;
+  -webkit-padding-start: 0px;
 }
 
 .nav-btn {
